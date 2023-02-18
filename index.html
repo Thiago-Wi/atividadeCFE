@@ -5,131 +5,197 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LH Games</title>
+  <title>TW Games</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+  rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilo.css">
-
+   <link rel="stylesheet" href="css/swiper-bundle.min.css">
 
 
 </head>
 
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<body >
+  <header >
+    
+    <nav class="navbar navbar-light bg-faded" style="background-color: rgb(17, 17, 212);">
+      <div   class="container-fluid">
+        <img src="img/logo.png" width="70px">
+        <a class="navbar-brand"  href="index.html" > <h2> Game mania </h2></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
+         aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          Menu <span class="navbar-toggler-icon" ></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Promoções</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Console</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Jogos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html"> >> Login << </a>
-            </li>
+      
+        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown" >
+          <ul  id="menuh">
+            <li ><a href="login.html">Login</a></li>  
+            <li ><a href="contato.html">Contato</a></li>
+            <li ><a href="melhores.html">Produtos</a></li>
+            <li ><a href="portifolio.html">Portifólio</a></li>          
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="O que deseja buscar?" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
         </div>
+    
+        
       </div>
     </nav>
   </header>
+  <section class="pesquisa">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Pesquise aqui" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+      </form>
+    </div>
+  </nav>
+</section>
+ 
+  <main > 
 
-  <main>
+    <section id="section-vendidos" class="container-fluid">
 
-
-
-    <section id="section-banners">
-
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-slide-to="0">
-            <img src="img/banner1.PNG" class="d-block w-100" alt="Venha comprar na nossa Loja">
-          </div>
-          <div class="carousel-item" data-slide-to="1">
-            <img src="img/banner2.PNG" class="d-block w-100" alt="Promoção de produtos">
-          </div>
-          <div class="carousel-item" data-slide-to="2">
-            <img src="img/banner3.PNG" class="d-block w-100" alt="Várias novidades de produtos">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    </section>
-    <section id="section-vendidos">
-
-      <h2>OS MAIS VENDIDOS</h2>
-
-      <div class="card-group">
-        <div class="card">
-          <img src="img/jogo1.PNG" class="card-img-top" alt="Descrição da foto">
-          <div class="card-body">
-            <h5 class="card-title">jogo 1</h5>
-            <p class="card-text">Jogo do ano</p>
-            <p class="preco">RS 182,00</p>
-            <a class="btn btn-primary" href="" role="button">Comprar</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/jogo2.PNG" class="card-img-top" alt="Descrição da foto">
-          <div class="card-body">
-            <h5 class="card-title">jogo 2</h5>
-            <p class="card-text">Jogo top de Linha</p>
-            <p class="preco">RS 152,00</p>
-            <a class="btn btn-primary" href="">Comprar</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="img/jogo3.PNG" class="card-img-top" alt="Descrição da foto">
-          <div class="card-body">
-            <h5 class="card-title">jogo 3</h5>
-            <p class="card-text">Melhor de todos</p>
-            <p class="preco">RS 172,00</p>
-            <a class="btn btn-primary" href="" role="button">Comprar</a>
-
-          </div>
-        </div>
-      </div>
-
+      <h4 class="box">OS MAIS VENDIDOS</h4>
+      
     </section>
 
+    <section id="section-banners" class="container-fluid" >
+            
+    
+    <div class="slide-container Swiper" > 
+      <div class="slide-content" >
+        <div class="card-wrapper swiper-wrapper" >
+          <div class="card swiper-slide"  >
+            <div class="image-content">
+              <span class="overlay">  </span>           
+              
+              <div class="card-image">
+                <img src="img/jogo1.PNG" alt="" class="card-img">
+              </div>
+            </div>
+
+             <div class="card-content">
+                 <h4 class="name"> Minecreaft </h4>
+                 <p class="descricao">Minecraft é um jogo eletrônico lançado em 2009 que consiste em sobreviver em um mundo formado (majoritariamente) por blocos cúbicos. 
+                  Steve, o personagem controlado pelo jogador, inicia o jogo em um ambiente repleto de árvores, montanhas, rios.</p>
+
+                 <button class="button">Ver mais</button>
+             </div>
+
+          </div>
+          
+          <div class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay">  </span>           
+              
+              <div class="card-image">
+                <img src="img/jogo2.PNG" alt="" class="card-img">
+              </div>
+            </div>
+
+             <div class="card-content">
+                 <h4 class="name"> Mario Bros </h4>
+                 <p class="descricao">O jogo pertencente a Nintendo, foi criado pelo produtor japonês Shigeru Miyamoto, 
+                  Mario Bros retrata as aventuras de Mario, um encanador, e seus amigos, 
+                  que se unem em torno de um objetivo em comum: salvar a princesa Peach, capturada pelo terrível monstro Bowser Koppa.</p>
+
+                 <button class="button">Ver mais</button>
+             </div>
+
+          </div>
+          <div id="completo" class="card swiper-slide">
+            <div class="image-content">
+              <span class="overlay"></span>           
+              
+              <div class="card-image">
+                <img src="img/jogo3.PNG" alt="" class="card-img">
+              </div>
+            </div>
+
+             <div class="card-content">
+                 <h4 class="name"> Free Fire </h4>
+                 <p class="descricao">Garena Free Fire é um jogo mobile de tiro no estilo Battle Royale,
+                   ou seja, todos contra todos.</p>
+
+                 <button class="button">Ver mais</button>
+             </div>
+
+          </div>
+        </div>
+      </div>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    
+
+    </div>
+  </section>
 
   </main>
 
-  <footer>
-    <p>Desenvolvimento por LH Games</p>
+  
+   <section class="MVV">
+     <div class="card1">
+         
+         <h4 class="name1"> Missão </h4>
+         <p class="missao">Inspirar e valorizar a paixão pela tecnologia, jogos, conteúdos, entretenimento e inovação, causando uma emoção inédita.</p>
+      </div>
+
+       <div class="card1">
+         
+         <h4 class="name1"> Visão </h4>
+         <p class="visao">Ampliar o público-alvo e as
+          nossas ações no mundo 
+          gamer e tecnológico.</p>
+          </div>
+
+        <div class="card1">
+    
+         <h4 class="name1"> Quem somos? </h4>
+         <p class="quem">Somos uma empresa do 
+          mundo gamer, e vedemos 
+          jogos e a alegria que vem
+          junto com eles.</p>
+        </div>
+    </section>
+  
+
+    
+    <p class="float-start mb-1">
+      <button class="btn btn-primary" type="button"  > 
+        <a href="#" style="text-decoration: none; color: aliceblue; ">Voltar ao topo</a> </button>
+    </p>
+    
+  <footer >
+    <br>
+    <nav class="rodape" style="background-color: rgb(216, 213, 213) ; width: 100%; padding-top: 20px;">
+    <div class="texto-rodape" style="width: 70%;">
+      <ul id="roda">
+      <li> <a href="#"><p style="color: black;">Suport</p></a>
+    <a href="#"><p style="color: black;">FAQs</p></a>
+  </li>
+    <li ><a href="#"><p style="color: black;">Content</p></a>
+    <a href="#"><p style="color: black;">Authors</p></a>
+  </li>
+  </ul>
+    
+  </div>
+      <div class="links"  >
+        <ul id="link">
+   <li> <a  href="https://www.instagram.com/"><img src="img/instagram.png" alt="" width="30px">Instagram </a></li>
+    <li><a  href="https://www.facebook.com/"><img src="img/facebook.png" alt="" width="30px">Facebook </a></li>
+  </ul>
+        </div>
+</nav>
+   
   </footer>
+  
 
-  <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
-
-  <script src="js/util.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+  integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

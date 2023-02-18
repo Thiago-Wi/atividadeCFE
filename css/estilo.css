@@ -1,106 +1,260 @@
-/********
 
-Cabeçalho do site - menu 
-
-
-*********/
-
-header img {
-    height: 70px;
-    width: 70px;
+.navbar-brand{
+    color: black;
+    transition: all .3s;
+}
+.navbar-brand:hover{
+    color: #efefef;
 }
 
 
-
-/******************
-
-Conteudo
-
-************/
-
-/**/
-
-#section-vendidos {
-    text-align: center;
+#menuh{
+    list-style: none;
+    padding: 0;
+    float: right;
 }
 
-#section-vendidos h2 {
-    text-align: center;
-    font-weight: bold;
-
-    padding: 20px;
-}
-
-#section-vendidos img {
-    height: 300px;
-    border-radius: 10px;
-}
-
-#section-vendidos .card {
-    margin: 5px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-#section-vendidos .preco {
-    color: red;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/*************
-    Rodape
-*************/
-
-footer {
-    text-align: center;
-}
-
-footer p {
-    text-align: center;
-    font-weight: bold;
-
-    padding: 10px;
-}
-
-/*Botão ao Voltar topo*/
-
-#voltar-topo {
-    position: fixed;
-    bottom: 5px;
-    right: 50px;
-
-}
-
-/* ****************
-    página de login
+#menuh li{
+    display: inline;
     
-    ********************/
-
-#section-login h1 {
-    text-align: center;
-
+}
+#menuh li a {
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+    transition: all .4s;
+    
+}
+#menuh li a:hover {
+    background-color: rgb(223, 67, 67);
+   
 }
 
-#section-login input {
+#section-vendidos{
+    background-color: rgb(216, 213, 213);
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.d-flex{
+
+    margin-left: 50px;
+}
+
+.box{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#section-banners{
+    max-height: 100%;
+    min-height: 50vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(216, 213, 213);
+}
+.slide-container {
+    max-height: 100%;
+    max-width: 1200px;
     width: 100%;
+    background-color: rgb(216, 213, 213);
+    padding: 20px 0;
+}
+
+.image-content,
+.card-content{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 
 }
 
-#section-banners img {
-    height: 500px;
+.card-content{
+    display: flex;
+    height: 100%;
+    padding: 2.5px;
 }
 
 
-/* Box de informações de cadastro*/
-#panel,
-#flip {
-    padding: 5px;
-    text-align: center;
+.image-content{
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color:#4070f4 ;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #4070f4;
+}
+.overlay::after{
+    border-radius: 0 25px 0 0;
     background-color: #fff;
 }
 
-#panel {
+.slide-content{
+    
+   overflow: hidden;
+   margin: 0 40px;
+    
+}
+
+.card {
+    
+    border-radius: 25px;
+    background-color: #fff;
+}
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    background: #fff;
+    padding: 3px;
+   
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25%;
+    border: 4px solid rgb(17, 17, 212);
+}
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+
+}
+.descricao{
+    font-size: 14px;
+    color:#707070;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #4070f4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}
+.button:hover{
+    background: #707070;
+}
+
+.swiper-navBtn{
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.swiper-button-next{
+    
+    right: 0;
+}
+.swiper-button-prev{
+    left: 0;
+}
+
+@media screen and(max-width: 760px) {
+    .slide-content{
+        margin: 0 10px;
+    }
+    .swiper-navBtn {
+        display: none;
+    }
+    
+}
+.MVV{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;      
+
+}
+.card1{
+    width: 200px;
+    
+    border-radius: 25px;
+    border-color: rgb(209, 24, 24);
+    border-style: groove;
     padding: 50px;
-    display: none;
+    margin: 25px 10px ;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    
+}
+.missao,
+.name1,
+.visao,
+.quem{
+    text-align: center;
+   
+}
+
+
+.rodape{
+    
+    display: flex;
+}
+
+#roda{
+    list-style: none;
+    display: flex;
+}
+
+#roda li{
+    padding: 10px;
+   
+}
+
+#link{
+    list-style: none;
+    display: flex;
+    
+}
+#link li{
+    padding: 10px;
+   text-decoration: none;
+   margin: 10px;
+   
+    
+}
+
+#link li a{
+    display: flex;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+    
+     
 }
